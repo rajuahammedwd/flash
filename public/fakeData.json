@@ -4,24 +4,28 @@
       "category": "Phone Case",
       "products": [
         {
-          "name": "Slim Phone Case",
-          "price": 19.99,
-          "images": ["phone_case_1.jpg", "phone_case_1_alt.jpg"]
+          "name": "FOX IPHONE CASE",
+          "price": 6500,
+          "discount":7,
+          "images": "https://i.ibb.co/d4dx1Qw/4-Oy841-BB.jpg"
         },
         {
-          "name": "Rugged Shockproof Case",
-          "price": 24.99,
-          "images": ["phone_case_2.jpg", "phone_case_2_alt.jpg"]
+          "name": "SLEEK ZED IPHONE CASE",
+          "price": 1500,
+          "discount": 62,
+          "images": "https://i.ibb.co/C758kTb/3-d-JQr-Ifp.jpg"
         },
         {
-          "name": "Leather Wallet Case",
-          "price": 29.99,
-          "images": ["phone_case_3.jpg", "phone_case_3_alt.jpg"]
+          "name": "SLEEK+ IPHONE CASE",
+          "price": 5900,
+          "discount": 14,
+          "images": "https://i.ibb.co/sK9gyg2/2-Iv-FVG3u.jpg"
         },
         {
-          "name": "Clear Protective Case",
-          "price": 14.99,
-          "images": ["phone_case_4.jpg", "phone_case_4_alt.jpg"]
+          "name": "FOX IPHONE CASE",
+          "price": 2499,
+          "discount": 50,
+          "images": "https://i.ibb.co/rtdbvHF/1-z4-Ud449.jpg"
         }
       ]
     },
@@ -29,24 +33,28 @@
       "category": "AirPod Case",
       "products": [
         {
-          "name": "Silicone AirPod Case",
-          "price": 9.99,
-          "images": ["airpod_case_1.jpg", "airpod_case_1_alt.jpg"]
+          "name": "KATZE NEO+ CASE FOR AIRPODS PRO",
+          "price": 5999,
+          "discount": 25,
+          "images": "https://i.ibb.co/vDCkq2r/2-VEjru-A8.jpg"
         },
         {
-          "name": "Hard Shell AirPod Case",
-          "price": 12.99,
-          "images": ["airpod_case_2.jpg", "airpod_case_2_alt.jpg"]
+          "name": "KATZE+ CASE FOR AIRPODS PRO Z",
+          "price": 250,
+          "discount": 64,
+          "images": "https://i.ibb.co/PTj7DFb/3-jxum-Xg-J.jpg"
         },
         {
-          "name": "Leather AirPod Case",
-          "price": 15.99,
-          "images": ["airpod_case_3.jpg", "airpod_case_3_alt.jpg"]
+          "name": "FOXIT CASE FOR AIRPODS PRO",
+          "price": 1500,
+          "discount": 70,
+          "images": "https://i.ibb.co/m8bFn4X/4.jpg"
         },
         {
-          "name": "Patterned AirPod Case",
-          "price": 8.99,
-          "images": ["airpod_case_4.jpg", "airpod_case_4_alt.jpg"]
+          "name": "KATZE CASE FOR AIRPODS PRO",
+          "price": 2499,
+          "discount": 49,
+          "images": "https://i.ibb.co/60rvZ0s/1-QXht-I9e.jpg"
         }
       ]
     },
@@ -54,24 +62,28 @@
       "category": "Lightning Cable",
       "products": [
         {
-          "name": "Nylon Braided Lightning Cable",
-          "price": 12.99,
-          "images": ["lightning_cable_1.jpg", "lightning_cable_1_alt.jpg"]
+          "name": "CYAN+ CABLE",
+          "price": 999,
+          "discount": 33,
+          "images": "https://i.ibb.co/3ppqxC3/4-6s-T1-Ukh.jpg"
         },
         {
-          "name": "3-in-1 Charging Cable",
-          "price": 19.99,
-          "images": ["lightning_cable_2.jpg", "lightning_cable_2_alt.jpg"]
+          "name": "MORPH CABLE (SNIPER EDITION)",
+          "price": 3333,
+          "discount": 24,
+          "images": "https://i.ibb.co/m4gM8vq/1.jpg"
         },
         {
-          "name": "Magnetic Charging Cable",
-          "price": 14.99,
-          "images": ["lightning_cable_3.jpg", "lightning_cable_3_alt.jpg"]
+          "name": "BELT CABLE (SNIPPE EDITION)",
+          "price": 2200,
+          "discount": 15,
+          "images": "https://i.ibb.co/0QLzyGF/3-vs-OKXWk.jpg"
         },
         {
-          "name": "Fast Charging Lightning Cable",
-          "price": 9.99,
-          "images": ["lightning_cable_4.jpg", "lightning_cable_4_alt.jpg"]
+          "name": "COAL++ CABLE (SNIPPE EDITION)",
+          "price": 1980,
+          "discount": 34,
+          "images": "https://i.ibb.co/m4gM8vq/1.jpg"
         }
       ]
     },
@@ -79,24 +91,28 @@
       "category": "Power Bank",
       "products": [
         {
-          "name": "Slim Portable Power Bank",
-          "price": 29.99,
-          "images": ["power_bank_1.jpg", "power_bank_1_alt.jpg"]
+          "name": "POWER S+ WIRELESS POWER BANK",
+          "price": 7997,
+          "discount": 11,
+          "images": "https://i.ibb.co/bvDjX4F/4-1.jpg"
         },
         {
-          "name": "High Capacity Power Bank",
-          "price": 39.99,
-          "images": ["power_bank_2.jpg", "power_bank_2_alt.jpg"]
+          "name": "POWER++ WIRELESS POWER BANK",
+          "price": 4333,
+          "discount": 33,
+          "images": "https://i.ibb.co/vYcRRRx/3-1.jpg"
         },
         {
-          "name": "Solar Power Bank",
-          "price": 49.99,
-          "images": ["power_bank_3.jpg", "power_bank_3_alt.jpg"]
+          "name": "POWER Z+ WIRELESS POWER BANK",
+          "price": 5500,
+          "discount": 8,
+          "images": "https://i.ibb.co/wNcbmy2/3.jpg"
         },
         {
-          "name": "Pocket-sized Power Bank",
-          "price": 19.99,
-          "images": ["power_bank_4.jpg", "power_bank_4_alt.jpg"]
+          "name": "POWER+ WIRELESS POWER BANK",
+          "price": 3999,
+          "discount": 20,
+          "images": "https://i.ibb.co/c3Why7h/1-n-Sx7oy-W.jpg"
         }
       ]
     }
