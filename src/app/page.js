@@ -1,5 +1,6 @@
 "use client";
 import Banner from "@/Components/Banner";
+import Footer from "@/Components/Footer";
 import Products from "@/Components/Products";
 import { useEffect, useState } from "react";
 
@@ -27,9 +28,10 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
+    <main className="font-montserrat px-3">
       <Banner />
-      <Products data={data}/>
+      <Products data={data} />
+      <Footer/>
     </main>
   );
 }

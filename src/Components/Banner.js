@@ -3,7 +3,7 @@ import Image from "next/image";
 const Banner = () => {
     return (
       <div className="border-b border-gray-300">
-        <div className="max-w-[1028px] mx-auto grid lg:grid-cols-3 gap-x-5 my-2">
+        <div className="max-w-[1028px] mx-auto grid grid-cols-2 lg:grid-cols-3 gap-x-5 my-2">
           <div className="group relative overflow-hidden">
             <Image
               className="rounded-md overflow-hidden transition-transform duration-700 transform-gpu group-hover:scale-110"
@@ -22,7 +22,7 @@ const Banner = () => {
               alt="Banner"
             />
           </div>
-          <div className="group relative overflow-hidden">
+          <div className="group hidden lg:block relative overflow-hidden">
             <Image
               className="rounded-md h-full overflow-hidden transition-transform duration-700 transform-gpu group-hover:scale-110"
               width={660}
