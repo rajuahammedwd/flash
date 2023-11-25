@@ -3,9 +3,8 @@ import Link from 'next/link';
 import React from 'react';
 
 const Product = (product) => {
-    const {name, price, discount, images } = product.product;
-    
-    
+  const { id, name, price, discount, images } = product.product;
+  
     return (
       <div className="card">
         <div className="group relative overflow-hidden">
@@ -22,8 +21,7 @@ const Product = (product) => {
           <span className="mr-2">৳{price}</span>
           <span className="text-red-500"> {discount}% OFF</span>
         </p>
-        <Link href={`/details/${product.product.slug}`}>
-          {" "}
+        <Link href={`/details/${id}`} >
           <button className="btn w-full items-center border border-black rounded-md py-2 hover:bg-[#E2E8F0]">
             Shop Now
           </button>
