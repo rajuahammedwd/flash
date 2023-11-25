@@ -9,28 +9,17 @@ const DetailsPage = async ({ params }) => {
   );
   const data = await response.json();
   const product = data.products.find((item) => item.id === params.id);
-  // const { id, name, price, discount, category, images } = product;
-  console.log(product)
-  // const discountPrice = (price * (100 - discount)) / 100;
-  
-  //  const moreProducts = data.products.filter(
-  //   (item) => item.category === category
-  // )
-  // console.log(moreProducts)
+  const moreProducts = data?.products?.filter((item) => item.category === product.category)
+  const { id, name, price, discount, images } = product;
+  const discountPrice = (price * (100 - discount)) / 100;
 
   return (
     <div className="border-b-2 px-5">
       <div className="max-w-[1028px] mx-auto">
         <div className="grid lg:grid-cols-3 mb-20">
           <div className="col-span-2 grid lg:grid-cols-5 gap-5">
-            {/* <div className="space-y-3 flex items-center lg:block">
-              <Image
-                className=""
-                src={images}
-                width={100}
-                height={100}
-                alt="img"
-              />
+            <div className="space-y-3 flex items-center lg:block">
+              <Image src={images} width={100} height={100} alt="img" />
               <Image
                 className=""
                 src={images}
@@ -47,17 +36,17 @@ const DetailsPage = async ({ params }) => {
                 height={700}
                 alt="sass"
               />
-            </div> */}
+            </div>
           </div>
           <div className="ml-8 space-y-5">
             <div className="space-y-3">
-              {/* <h1>{name}</h1> */}
+              <h1>{name}</h1>
               <p className="flex items-center text-xl font-bold">
-                {/* <span className="mr-2">৳{price}</span> */}
+                <span className="mr-2">৳{discountPrice}</span>
                 <span className="mr-2">
-                  <del>1500</del>
+                  <del>{price}</del>
                 </span>
-                {/* <span className="text-green-500"> {discountPrice}% OFF</span> */}
+                <span className="text-green-500"> {discount}% OFF</span>
               </p>
               <p>
                 <small>inclusive of all taxes</small>
@@ -101,7 +90,7 @@ const DetailsPage = async ({ params }) => {
             </button>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-            {/* {phoneCase.map((item) => (
+            {moreProducts?.map((item) => (
               <div key={id} className="card">
                 <div className="group relative overflow-hidden">
                   <Image
@@ -115,12 +104,17 @@ const DetailsPage = async ({ params }) => {
                 <h3 className="line-clamp-1 font-montserrat hover:underline">
                   {item.name}
                 </h3>
-                <p className="flex items-center">
-                  <span className="mr-2">৳{item.price}</span>
-                  <span className="text-red-500"> {item.discount}% OFF</span>
+                <p>
+                  <small className="flex items-center">
+                    <span className="mr-2">৳{discountPrice}</span>
+                    <span>
+                      <del>{price}</del>
+                    </span>
+                    <span className="text-red-500"> {item.discount}% OFF</span>
+                  </small>
                 </p>
               </div>
-            ))} */}
+            ))}
           </div>
         </div>
       </div>

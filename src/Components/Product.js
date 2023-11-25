@@ -5,6 +5,7 @@ import React from 'react';
 const Product = ({ data }) => {
   console.log(data)
   const { id, name, price, discount, images } = data;
+  const discountPrice = (price * (100 - discount)) / 100;
 
   return (
     <div className="card">
@@ -18,15 +19,16 @@ const Product = ({ data }) => {
         />
       </div>
       <h3 className="line-clamp-1 font-montserrat hover:underline">{name}</h3>
-      <p className="flex items-center">
-        <span className="mr-2">৳{price}</span>
+      <small className="flex items-center">
+        <span className="mr-2">৳{discountPrice}</span>
+        <span>
+          <del>{price}</del>
+        </span>
         <span className="text-red-500"> {discount}% OFF</span>
-      </p>
-      <Link href={`/details/${id}`}>
+      </small>
         <button className="btn w-full items-center border border-black rounded-md py-2 hover:bg-[#E2E8F0]">
           Shop Now
         </button>
-      </Link>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import Product from "./Product";
 import { IoIosArrowForward } from "react-icons/io";
+import Link from "next/link";
 
 const Products = ({ data }) => {
   const products = data?.products;
@@ -19,7 +20,7 @@ const Products = ({ data }) => {
             <p className="my-3 font-bold items-center">
               Categories{" "}
               <span className="ml-3 bg-black text-white py-1 px-1 rounded">
-                {/* {products?.length} */}leng
+                {allCategory?.length}
               </span>
             </p>
             <ul className="list space-y-3">
@@ -35,7 +36,7 @@ const Products = ({ data }) => {
                 <div key={index}>
                   <div className="flex items-center justify-between">
                     <h2 className="my-3 font-bold uppercase">
-                      {item[0]?.category}
+                      {item?.category}
                       <span className="ml-3 bg-black text-white py-1 px-1 rounded">
                         {item?.length}
                       </span>
@@ -47,7 +48,9 @@ const Products = ({ data }) => {
                   <div>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
                       {item?.map((data, index) => (
-                        <Product key={index} data={data} />
+                        <Link href={`/details/${data.id}`} key={index}>
+                          <Product data={data} />
+                        </Link>
                       ))}
                     </div>
                   </div>
