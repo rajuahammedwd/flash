@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { BiCategoryAlt } from "react-icons/bi";
 import { RiShoppingBag3Line } from "react-icons/ri";
+import { FaSearch } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -18,11 +19,22 @@ const Navbar = () => {
             alt="logo"
           ></Image>
         </div>
-        <div>
+        {/* <div>
           <input
-            className="input border px-5"
+            className="w-full input border py-2 px-5 rounded-md"
             type="text"
             placeholder="Search Product Here"
+          />
+        </div> */}
+        <div class="relative text-gray-600">
+          <button type="submit" class="absolute left-0 top-0 mt-3 ml-3">
+            <FaSearch/>
+          </button>
+          <input
+            type="search"
+            name="search"
+            placeholder="Search Products Here"
+            class="input border h-10 px-10 pr-10 text-sm focus:outline-none w-full rounded"
           />
         </div>
         <div className="flex justify-end items-center gap-x-10">

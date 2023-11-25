@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const Product = (product) => {
@@ -16,16 +17,17 @@ const Product = (product) => {
             height={200}
           />
         </div>
-        <h3 className="line-clamp-1 font-montserrat hover:underline">
-          {name}
-        </h3>
+        <h3 className="line-clamp-1 font-montserrat hover:underline">{name}</h3>
         <p className="flex items-center">
           <span className="mr-2">৳{price}</span>
           <span className="text-red-500"> {discount}% OFF</span>
         </p>
-        <button className="btn w-full items-center border border-black rounded-md py-2 hover:bg-[#E2E8F0]">
-          Shop Now
-        </button>
+        <Link href={`/details/${product.product.slug}`}>
+          {" "}
+          <button className="btn w-full items-center border border-black rounded-md py-2 hover:bg-[#E2E8F0]">
+            Shop Now
+          </button>
+        </Link>
       </div>
     );
 };
