@@ -3,7 +3,14 @@ import Product from "./Product";
 import { IoIosArrowForward } from "react-icons/io";
 
 const Products = ({ data }) => {
-    const products = data?.productsCategories
+  const products = data?.products;
+  const phoneCase = products?.filter((item) => item.category === "phoneCase");
+  const airPodCase = products?.filter((item) => item.category === "airPodCase");
+  const lightningCable = products?.filter(
+    (item) => item.category === "lightningCable"
+  );
+  const powerBank = products?.filter((item) => item.category === "powerBank");
+  const allCategory = [phoneCase, airPodCase, lightningCable, powerBank];
   return (
     <div className="border-b-4 border-gray-300">
       <div className="max-w-[1028px] mx-auto mb-10">
@@ -12,7 +19,7 @@ const Products = ({ data }) => {
             <p className="my-3 font-bold items-center">
               Categories{" "}
               <span className="ml-3 bg-black text-white py-1 px-1 rounded">
-                {data?.productsCategories?.length}
+                {/* {products?.length} */}leng
               </span>
             </p>
             <ul className="list space-y-3">
@@ -23,26 +30,30 @@ const Products = ({ data }) => {
             </ul>
           </div>
           <div className="col-span-4">
-            {products?.map((product) => (
-              <div className="my-3" key={product?.id}>
-                <div className="flex items-center justify-between">
-                  <h2 className="my-3 font-bold">
-                    {product?.category}
-                    <span className="ml-3 bg-black text-white py-1 px-1 rounded">
-                      {product?.products.length}
-                    </span>
-                  </h2>
-                  <button className="btn flex items-center">
-                    See All <IoIosArrowForward className="ml-2 text-xl" />
-                  </button>
+            <div>
+              {allCategory?.map((item, index) => (
+                <div key={index}>
+                  <div className="flex items-center justify-between">
+                    <h2 className="my-3 font-bold uppercase">
+                      {item[0]?.category}
+                      <span className="ml-3 bg-black text-white py-1 px-1 rounded">
+                        {item?.length}
+                      </span>
+                    </h2>
+                    <button className="btn flex items-center">
+                      See All <IoIosArrowForward className="ml-2 text-xl" />
+                    </button>
+                  </div>
+                  <div>
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+                      {item?.map((data, index) => (
+                        <Product key={index} data={data} />
+                      ))}
+                    </div>
+                  </div>
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-                  {product?.products?.map((product) => (
-                    <Product key={product?.id} product={product} />
-                  ))}
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

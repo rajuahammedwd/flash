@@ -9,7 +9,7 @@ export default function Home() {
     async function fetchData() {
       try {
         const response = await fetch(
-          "https://raw.githubusercontent.com/rajuahammedwd/flash/main/public/fakeData.json"
+          "https://raw.githubusercontent.com/rajuahammedwd/flash/main/public/Products.json"
         );
 
         if (response.ok) {
