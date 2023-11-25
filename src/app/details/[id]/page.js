@@ -7,6 +7,7 @@ const DetailsPage =async ({ params }) => {
       "https://raw.githubusercontent.com/rajuahammedwd/flash/main/public/fakeData.json"
   );
   const data = await response.json();
+  console.log(data)
   
 
     return (

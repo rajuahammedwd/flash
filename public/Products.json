@@ -1,0 +1,132 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "FOX IPHONE CASE",
+      "price": 6500,
+      "discount": 7,
+      "category": "phoneCase",
+      "images": "https://i.ibb.co/d4dx1Qw/4-Oy841-BB.jpg"
+    },
+    {
+      "id": "2",
+      "name": "SLEEK ZED IPHONE CASE",
+      "price": 1500,
+      "discount": 62,
+      "category": "phoneCase",
+      "images": "https://i.ibb.co/C758kTb/3-d-JQr-Ifp.jpg"
+    },
+    {
+      "id": "3",
+      "name": "SLEEK+ IPHONE CASE",
+      "price": 5900,
+      "discount": 14,
+      "category": "phoneCase",
+      "images": "https://i.ibb.co/sK9gyg2/2-Iv-FVG3u.jpg"
+    },
+    {
+      "id": "4",
+      "name": "FOX IPHONE CASE",
+      "price": 2499,
+      "discount": 50,
+      "category": "phoneCase",
+      "images": "https://i.ibb.co/rtdbvHF/1-z4-Ud449.jpg"
+    },
+    {
+      "id": "5",
+      "name": "KATZE NEO+ CASE FOR AIRPODS PRO",
+      "price": 5999,
+      "discount": 25,
+      "category": "airPodCase",
+      "images": "https://i.ibb.co/vDCkq2r/2-VEjru-A8.jpg"
+    },
+    {
+      "id": "6",
+      "name": "KATZE+ CASE FOR AIRPODS PRO Z",
+      "price": 250,
+      "discount": 64,
+      "category": "airPodCase",
+      "images": "https://i.ibb.co/PTj7DFb/3-jxum-Xg-J.jpg"
+    },
+    {
+      "id": "7",
+      "name": "FOXIT CASE FOR AIRPODS PRO",
+      "price": 1500,
+      "discount": 70,
+      "category": "airPodCase",
+      "images": "https://i.ibb.co/m8bFn4X/4.jpg"
+    },
+    {
+      "id": "8",
+      "name": "KATZE CASE FOR AIRPODS PRO",
+      "price": 2499,
+      "discount": 49,
+      "category": "airPodCase",
+      "images": "https://i.ibb.co/60rvZ0s/1-QXht-I9e.jpg"
+    },
+    {
+      "id": "9",
+      "name": "CYAN+ CABLE",
+      "price": 999,
+      "discount": 33,
+      "category": "lightningCable",
+      "images": "https://i.ibb.co/3ppqxC3/4-6s-T1-Ukh.jpg"
+    },
+    {
+      "id": "10",
+      "name": "MORPH CABLE (SNIPER EDITION)",
+      "price": 3333,
+      "discount": 24,
+      "category": "lightningCable",
+      "images": "https://i.ibb.co/m4gM8vq/1.jpg"
+    },
+    {
+      "id": "11",
+      "name": "BELT CABLE (SNIPPE EDITION)",
+      "price": 2200,
+      "discount": 15,
+      "category": "lightningCable",
+      "images": "https://i.ibb.co/0QLzyGF/3-vs-OKXWk.jpg"
+    },
+    {
+      "id": "12",
+      "name": "COAL++ CABLE (SNIPPE EDITION)",
+      "price": 1980,
+      "discount": 34,
+      "category": "lightningCable",
+      "images": "https://i.ibb.co/m4gM8vq/1.jpg"
+    },
+    {
+      "id": "13",
+      "name": "POWER S+ WIRELESS POWER BANK",
+      "price": 7997,
+      "discount": 11,
+      "category": "powerBank",
+      "images": "https://i.ibb.co/bvDjX4F/4-1.jpg"
+    },
+    {
+      "id": "14",
+      "name": "POWER++ WIRELESS POWER BANK",
+      "price": 4333,
+      "discount": 33,
+      "category": "powerBank",
+      "images": "https://i.ibb.co/vYcRRRx/3-1.jpg"
+    },
+    {
+      "id": "15",
+      "name": "POWER Z+ WIRELESS POWER BANK",
+      "price": 5500,
+      "discount": 8,
+      "category": "powerBank",
+      "images": "https://i.ibb.co/wNcbmy2/3.jpg"
+    },
+    {
+      "id": "16",
+      "name": "POWER+ WIRELESS POWER BANK",
+      "price": 3999,
+      "discount": 20,
+      "category": "powerBank",
+      "images": "https://i.ibb.co/c3Why7h/1-n-Sx7oy-W.jpg"
+    }
+  ]
+}
