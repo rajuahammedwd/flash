@@ -11,7 +11,8 @@ const DetailsPage = async ({ params }) => {
   const product = data.products.find((item) => item.id === params.id);
   const moreProducts = data?.products?.filter((item) => item.category === product.category)
   const { id, name, price, discount, images } = product;
-  const discountPrice = (price * (100 - discount)) / 100;
+  const discountAmount = (price * (100 - discount)) / 100;
+  const discountPrice = Math.floor(discountAmount);
 
   return (
     <div className="border-b-2 px-5">

@@ -5,7 +5,8 @@ import React from 'react';
 const Product = ({ data }) => {
   console.log(data)
   const { id, name, price, discount, images } = data;
-  const discountPrice = (price * (100 - discount)) / 100;
+  const discountAmount = (price * (100 - discount)) / 100;
+  const discountPrice = Math.floor(discountAmount);
 
   return (
     <div className="card">
@@ -21,7 +22,7 @@ const Product = ({ data }) => {
       <h3 className="line-clamp-1 font-montserrat hover:underline">{name}</h3>
       <small className="flex items-center">
         <span className="mr-2">৳{discountPrice}</span>
-        <span>
+        <span className='mr-2'>
           <del>{price}</del>
         </span>
         <span className="text-red-500"> {discount}% OFF</span>
