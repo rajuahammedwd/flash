@@ -1,7 +1,11 @@
+
+import Product from "@/Components/Product";
 import Image from "next/image";
+import Link from "next/link";
 import { CiHeart } from "react-icons/ci";
 import { IoIosArrowForward } from "react-icons/io";
 import { RiShoppingBag3Line } from "react-icons/ri";
+
 
 const DetailsPage = async ({ params }) => {
   const response = await fetch(
@@ -9,8 +13,11 @@ const DetailsPage = async ({ params }) => {
   );
   const data = await response.json();
   const product = data.products.find((item) => item.id === params.id);
-  const moreProducts = data?.products?.filter((item) => item.category === product.category)
-  const { id, name, price, discount, images } = product;
+  console.log(product)
+  const moreProducts = data?.products?.filter(
+    (item) => item.category === product.category
+  );
+  const { id, name, price, discount, images, quantity } = product;
   const discountAmount = (price * (100 - discount)) / 100;
   const discountPrice = Math.floor(discountAmount);
 
@@ -55,7 +62,7 @@ const DetailsPage = async ({ params }) => {
             </div>
 
             <div>
-              <h1 className="mb-5">QTY : 100</h1>
+              <h1 className="mb-5">QTY : {quantity}</h1>
               <div>
                 <h2 className="uppercase font-bold">
                   Select Color <span className="text-red-500">*</span>
@@ -80,8 +87,8 @@ const DetailsPage = async ({ params }) => {
         </div>
         <div className="my-3">
           <div className="flex items-center justify-between">
-            <h2 className="my-3 font-bold">
-              Phone Category
+            <h2 className="my-3 font-bold uppercase">
+              more from  {moreProducts[0]?.category}
               <span className="ml-3 bg-black text-white py-1 px-1 rounded">
                 4
               </span>
@@ -92,29 +99,9 @@ const DetailsPage = async ({ params }) => {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
             {moreProducts?.map((item) => (
-              <div key={id} className="card">
-                <div className="group relative overflow-hidden">
-                  <Image
-                    className="overflow-hidden transition-transform duration-700 transform-gpu group-hover:scale-110"
-                    src={item.images}
-                    alt={"img"}
-                    width={200}
-                    height={200}
-                  />
-                </div>
-                <h3 className="line-clamp-1 font-montserrat hover:underline">
-                  {item.name}
-                </h3>
-                <p>
-                  <small className="flex items-center">
-                    <span className="mr-2">৳{discountPrice}</span>
-                    <span>
-                      <del>{price}</del>
-                    </span>
-                    <span className="text-red-500"> {item.discount}% OFF</span>
-                  </small>
-                </p>
-              </div>
+              <Link href={`/details/${item.id}`} key={item.id}>
+                <Product data={item} />
+              </Link>
             ))}
           </div>
         </div>

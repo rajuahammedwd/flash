@@ -3,7 +3,6 @@ import Link from 'next/link';
 import React from 'react';
 
 const Product = ({ data }) => {
-  console.log(data)
   const { id, name, price, discount, images } = data;
   const discountAmount = (price * (100 - discount)) / 100;
   const discountPrice = Math.floor(discountAmount);

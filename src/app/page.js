@@ -27,7 +27,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="font-montserrat px-3">
+    <main className="font-montserrat px-5">
       <Banner />
       <Products data={data} />
       
