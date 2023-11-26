@@ -13,7 +13,7 @@ const DetailsPage = async ({ params }) => {
   );
   const data = await response.json();
   const product = data.products.find((item) => item.id === params.id);
-  console.log(product)
+  console.log(product.quantity);
   const moreProducts = data?.products?.filter(
     (item) => item.category === product.category
   );
@@ -62,7 +62,7 @@ const DetailsPage = async ({ params }) => {
             </div>
 
             <div>
-              <h1 className="mb-5">QTY : {quantity}</h1>
+              <h1 className="mb-5">QTY :{quantity}</h1>
               <div>
                 <h2 className="uppercase font-bold">
                   Select Color <span className="text-red-500">*</span>
@@ -88,7 +88,7 @@ const DetailsPage = async ({ params }) => {
         <div className="my-3">
           <div className="flex items-center justify-between">
             <h2 className="my-3 font-bold uppercase">
-              more from  {moreProducts[0]?.category}
+              more from {moreProducts[0]?.category}
               <span className="ml-3 bg-black text-white py-1 px-1 rounded">
                 4
               </span>

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Product from "./Product";
 import { IoIosArrowForward } from "react-icons/io";
@@ -32,8 +33,8 @@ const Products = ({ data }) => {
           </div>
           <div className="col-span-4">
             <div>
-              {allCategory?.map((item, index) => (
-                <div key={index}>
+              {allCategory?.map((item,index) =>( 
+              <div key={index}>
                   <div className="flex items-center justify-between">
                     <h2 className="my-3 font-bold uppercase">
                       {item?.category}
